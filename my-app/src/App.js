@@ -6,9 +6,9 @@ import GraphicsLayer from '@arcgis/core/layers/GraphicsLayer';
 import Point from '@arcgis/core/geometry/Point';
 import esriConfig from "@arcgis/core/config.js";
 import SimpleMarkerSymbol from '@arcgis/core/symbols/SimpleMarkerSymbol';
-import axios from 'axios'
 
-esriConfig.apiKey = "AAPK5c123c34740b4961887b73f8d0130f0eTRRwSIN1ZxSreOVzITrn_PyLIywqXJYlN6sDccWFf1_f8MHz84gkTYTr7NV_lGgO"; // Use your ArcGIS API key here
+
+esriConfig.apiKey = "input your api key here"
 esriConfig.assetsPath = "./assets";
 
 
@@ -61,7 +61,7 @@ function App() {
     const view = new MapView({
       container: mapDiv.current,
       map: map,
-      center: [-122.44, 37.77], // These coordinates point to San Francisco
+      center: [-122.44, 37.77], // These coordinates point to San Francisco, you want to put the coordinates of your city here
       zoom: 12 // This zoom level should give a good view of the city
     });
   
